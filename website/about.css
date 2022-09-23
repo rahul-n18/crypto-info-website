@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-color{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+}
+.bg-1{
+    flex: 1;
+    background-color: rgb(180,243, 175);
+}
+.bg-2{
+    flex: 1;
+    background-color: rgb(163,236, 240);
+}
+.about-container{
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 24px 24px 30px #6d8dad;
+}
+.image-container{
+    flex: 1;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img{
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.text-container{
+    flex: 1;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-container h1{
+    font-size: 40px;
+    padding: 10px 30px;
+    text-align: justify;
+    font-style: initial;
+}
+.text-container p{
+    font-size: small;
+    padding: 10px 30px;
+    text-align: left;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 30px;
+    
+}
+.moreText{
+    display: none;
+}
+.read-more-btn{
+    font-size: small;
+    padding: 12px;
+    margin-top: 30px;
+    background-color:rgb(24, 24, 179);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.text.show-more .moreText{
+    display: inline;
+}
+.text.show-more .dots{
+    display: none;
+}
+.read-more-btn:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid  rebeccapurple;
+
+}
+@media screen  and (max-width:1600px)  {
+    .about-container{
+        width: 90%;
+    }
+    
+}
